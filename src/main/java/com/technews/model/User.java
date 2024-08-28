@@ -15,7 +15,8 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String username;
-    @Column(unqiue = true)
+
+    @Column(unqiue=true)
     private String email;
     private String password;
     @Transient
